@@ -1,13 +1,16 @@
-#Vignesh Nanduri encoding and main
+#Artem Rospotniuk (kalledus13)
 #Lab 6 Groups 10
 def encode(password):
-    encoded_password = ''
+    encoded_password = ""
     for i in range(len(password)):
         encoded_password += str((3 + int(password[i])) % 10)
     return encoded_password
-#Artem Rospotniuk (kalledus13)
-def decode(encoded_password):
-    pass
+#Vignesh Nanduri decoding
+def decode(encoded_pass):
+    decoded_pass = ''
+    for i in encoded_password:
+        decoded_pass += str((int(i) - 3) % 10)
+    return decoded_pass = ''
 
 def main():
     print('Menu')
